@@ -1,0 +1,148 @@
+.header {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  border: 1px solid #ececec;
+  border-width: 0px 0px 1px 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+
+    & li {
+      margin-left: 23px;
+      margin-right: 23px;
+    }
+    & a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.02em;
+      color: var(--title-color);
+    }
+  }
+  &__active {
+    position: relative;
+    color: var(--main-color) !important;
+
+    &::after {
+      position: absolute;
+      right: 0px;
+      top: 44px;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: var(--main-color);
+      border-radius: 2px;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 30px;
+
+  &__phone {
+    margin-right: 12px;
+  }
+
+  &__phone,
+  &__e-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover,
+    &:focus {
+      fill: var(--main-color);
+      color: var(--main-color);
+      cursor: pointer;
+    }
+
+    &-icon {
+      fill: currentColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    justify-content: space-between;
+  }
+  .contact {
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0px;
+    gap: 14px;
+    flex-direction: column;
+    &__phone,
+    &__e-mail {
+      height: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+
+    &__list {
+      flex-direction: column;
+      gap: 32px;
+
+      & li {
+        margin-left: 0px;
+      }
+
+      & a {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: var(--title-color);
+      }
+    }
+
+    &__active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .contact {
+    display: none;
+
+    &__phone {
+      font-size: 34px;
+      line-height: 40px;
+      color: var(--main-color);
+      margin-top: auto;
+    }
+    &__e-mail {
+      font-size: 24px;
+      line-height: 28px;
+      color: var(--text-color);
+    }
+  }
+}

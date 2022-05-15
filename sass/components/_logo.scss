@@ -1,0 +1,25 @@
+.logo {
+  font-family: var(--secondary-font);
+  color: black;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+
+  & span {
+    color: var(--main-color);
+  }
+  & span:nth-child(2) {
+    color: var(--bright-background-color);
+  }
+  &--footer {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin-right: 0px;
+  }
+}

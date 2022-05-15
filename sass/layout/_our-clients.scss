@@ -1,0 +1,44 @@
+.our-clients {
+  width: 100%;
+  min-height: 184px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & h2 {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--clients-width);
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__link {
+    color: var(--text-color);
+
+    &:hover * {
+      border-color: #2196f3;
+      fill: var(--main-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

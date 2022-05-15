@@ -1,0 +1,45 @@
+.socials-list {
+  $self: &;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 32px 30px 32px;
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icons);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: var(--main-color);
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    text-decoration: none;
+  }
+
+  &--footer {
+    padding: 0;
+    gap: 10px;
+
+    #{$self}__link {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      &:hover {
+        background-color: var(--main-color);
+      }
+    }
+  }
+}

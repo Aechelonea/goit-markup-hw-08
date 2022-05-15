@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!-- Judyta Patoka -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><span>Web</span>Studio</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="navigation__active" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <a class="contact__e-mail" href="mailto:info@devstudio.com">
+          <svg class="contact__e-mail-icon" width="16" height="12">
+            <use href="images/symbol-defs.svg#envelope"></use>
+          </svg>
+          <p>info@devstudio.com</p>
+        </a>
+        <a class="contact__phone" href="tel:+48111111111">
+          <svg class="contact__phone-icon" width="10" height="16">
+            <use href="images/symbol-defs.svg#smartphone"></use>
+          </svg>
+          <p>+48 111 111 111</p>
+        </a>
+      </div>
+      <div class="modal-menu-button" data-mobile-menu-open>
+        <svg width="24" height="16">
+          <use href="images/symbol-defs.svg#modal-menu"></use>
+        </svg>
+      </div>
+      <div class="modal-menu is-hidden" data-mobile-menu>
+        <button class="modal-menu__close-button" data-mobile-menu-close>
+          <svg width="19" height="19">
+            <use href="images/symbol-defs.svg#cross-menu"></use>
+          </svg>
+        </button>
+        <ul class="navigation__list">
+          <li>
+            <a href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="navigation__active" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+        <a class="contact__phone" href="tel:+48111111111"> +48 111 111 111 </a>
+        <a class="contact__e-mail" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+        <ul class="socials-links">
+          <li class="socials-links__item">
+            <a href="#"> Instagram </a>
+          </li>
+          <li class="socials-links__item">
+            <a href="#"> Twitter </a>
+          </li>
+          <li class="socials-links__item">
+            <a href="#"> Facebook </a>
+          </li>
+          <li class="socials-links__item">
+            <a href="#"> LinkedIn </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio-menu">
+        <ul>
+          <li>
+            <input
+              class="button button__portfolio button__portfolio-active"
+              type="button"
+              value="Wszystkie"
+            />
+          </li>
+          <li>
+            <input
+              class="button button__portfolio"
+              type="button"
+              value="Strony"
+            />
+          </li>
+          <li>
+            <input
+              class="button button__portfolio"
+              type="button"
+              value="Aplikacje"
+            />
+          </li>
+          <li>
+            <input
+              class="button button__portfolio"
+              type="button"
+              value="Dizajn"
+            />
+          </li>
+          <li>
+            <input
+              class="button button__portfolio"
+              type="button"
+              value="Marketing"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio-showcase">
+        <ul class="portfolio-showcase__list">
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Technocrack.jpg"
+                srcset="
+                  images/Portfolio/Technocrack.jpg    1x,
+                  images/Portfolio/Technocrack@2x.jpg 2x
+                "
+                alt="Laptop ze stroną powitalną z napisem Our people make the difference"
+              />
+              <div class="portfolio-showcase__details">
+                Technocrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Technocrack</h5>
+              <p>Strona internetowa</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Basketball.jpg"
+                srcset="
+                  images/Portfolio/Basketball.jpg        1x,
+                  images/Portfolio/Basketball@2x.jpg 2x
+                "
+                alt="Grafika z dwoma koszykarzami w skoku walczącymi o piłkę."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Grafika New Orlean vs Golden Star</h5>
+              <p>Dizajn</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Seafood.jpg"
+                srcset="
+                  images/Portfolio/Seafood.jpg        1x,
+                  images/Portfolio/Seafood@2x.jpg 2x
+                "
+                alt="Czarne logo restauracji Seafood na tle wyszarzonej ryby."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Restauracja Seafood</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Prime.jpg"
+                srcset="
+                  images/Portfolio/Prime.jpg        1x,
+                  images/Portfolio/Prime@2x.jpg 2x
+                "
+                alt="Czarne słuchawki nauszne na białym tle."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt Prime</h5>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Boxes.jpg"
+                srcset="
+                  images/Portfolio/Boxes.jpg        1x,
+                  images/Portfolio/Boxes@2x.jpg 2x
+                "
+                alt="Dwa pudełka z minimalistycznym designem na białym tle."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt Boxes</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/NoBorders.jpg"
+                srcset="
+                  images/Portfolio/NoBorders.jpg        1x,
+                  images/Portfolio/NoBorders@2x.jpg 2x
+                "
+                alt="Monitor z wyświetlonym projektem czarnej strony z mapą świata."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Inspiration has no Borders</h5>
+              <p>Strona internetowa</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/Limited.jpg"
+                srcset="
+                  images/Portfolio/Limited.jpg        1x,
+                  images/Portfolio/Limited@2x.jpg 2x
+                "
+                alt="Otwarty magazyn papierowy ze zdjęciami i napisem I'm limited edition."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Magazyn Limited Edition</h5>
+              <p>Dizajn</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/LAB.jpg"
+                srcset="
+                  images/Portfolio/LAB.jpg        1x,
+                  images/Portfolio/LAB@2x.jpg 2x
+                "
+                alt="Zbliżenie na białą metkę z napisem LAB EL TAG zawieszonej na jasnym sznurku."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt LAB</h5>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <div class="portfolio-showcase__description">
+              <img
+                src="images/Portfolio/GrowingBusiness.jpg"
+                srcset="
+                  images/Portfolio/GrowingBusiness.jpg        1x,
+                  images/Portfolio/GrowingBusiness@2x.jpg 2x
+                "
+                alt="Otwarty laptop z prezentacją aplikacji Growing Business."
+              />
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Growing Business</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact">
+        <a href="#" class="logo logo--footer">
+          <span>Web</span><span>Studio</span>
+        </a>
+        <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+        <a class="footer__e-mail" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+        <a class="footer__phone" href="tel:+48111111111"> +48 111 111 111 </a>
+      </div>
+      <div class="join-us">
+        <h4 class="join-us__header">Dołącz do nas</h4>
+        <ul class="socials-list socials-list--footer">
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link">
+              <svg class="socials-list__icon">
+                <use href="images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link">
+              <svg class="socials-list__icon">
+                <use href="images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link">
+              <svg class="socials-list__icon">
+                <use href="images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a href="#" class="socials-list__link">
+              <svg class="socials-list__icon">
+                <use href="images/symbol-defs.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
+        <form name="newsletter__form" class="newsletter__form">
+          <label>
+            <input
+              class="newsletter__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              validate
+            />
+          </label>
+          <button type="submit" class="button button__footer">
+            Zapisz się
+            <svg class="newsletter__icon" width="24" height="24">
+              <use href="images/symbol-defs.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal-menu.js"></script>
+  </body>
+</html>

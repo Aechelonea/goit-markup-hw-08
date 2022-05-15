@@ -1,0 +1,80 @@
+.modal-menu-button {
+  display: none;
+}
+
+.modal-menu {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 48px 40px 48px 40px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 1;
+
+  &__close-button {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+    & svg:hover {
+      fill: var(--main-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .modal-menu-button {
+    display: inherit;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: var(--main-color);
+    }
+  }
+  .socials-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 32px;
+    
+    &__item {
+      position: relative;
+      &::after {
+        content: "";
+        width: 0px;
+        height: 22px;
+        position: absolute;
+        right: -10px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+      }
+    }
+
+    &__item:last-child {
+      &::after {
+        border: none;
+      }
+    }
+
+    &__item a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: var(--main-color);
+    }
+  }
+}
